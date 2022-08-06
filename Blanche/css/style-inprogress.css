@@ -1,0 +1,110 @@
+#top,
+#bottom,
+#left,
+#right {
+    background: #e0ecf1;
+    position: fixed;
+}
+
+#left,
+#right {
+    top: 0;
+    bottom: 0;
+    width: 25px;
+}
+
+#left {
+    left: 0;
+}
+
+#right {
+    right: 0;
+}
+
+#top,
+#bottom {
+    left: 0;
+    right: 0;
+    height: 25px;
+}
+
+#top {
+    top: 0;
+}
+
+#bottom {
+    bottom: 0;
+}
+
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 50px 20px 150px 20px;
+    height: 100%;
+}
+
+.logo {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 360px;
+}
+
+.message {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto 50px;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+.message-text {
+    color: #666666;
+    font-size: 18px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 25px;
+}
+
+.progress {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 50px;
+}
+
+.back {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+}
+
+.gif {
+    opacity: .2;
+    -moz-opacity: .2;
+    -webkit-opacity: .2;
+    width: 50px;
+}
+
+.pulsate {
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.2;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
